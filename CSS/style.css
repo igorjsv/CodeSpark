@@ -992,3 +992,17 @@ main.contato-main {
   margin-top: 24px;
   display: block;
 }
+
+
+.card {
+  background: white;
+  padding: 12px;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 16px auto;
+}
+.estrelas {
+  color: #FF6B54;
+  font-size: 1.2rem;
+}

@@ -95,5 +95,20 @@
   });
 </script>
   <script src="../JS/script.js"></script>
+
+<!-- Popup de Avaliação -->
+<div id="popup-avaliacao" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000000aa; justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:8px; max-width:320px; text-align:center;">
+    <h3>Como foi sua experiência?</h3>
+    <form id="form-avaliacao">
+      <input type="text" id="avaliador-nome" placeholder="Seu nome" required><br><br>
+      <input type="number" id="avaliador-estrelas" min="1" max="5" placeholder="Estrelas (1 a 5)" required><br><br>
+      <textarea id="avaliador-comentario" placeholder="Comentário" required></textarea><br><br>
+      <button type="submit">Enviar Avaliação</button>
+    </form>
+  </div>
+</div>
+
+<script src="../JS/avaliacao.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+{
+  "depoimentos": [
+    {
+      "nome": "Ana P.",
+      "comentario": "O atendimento foi incrível e o app ficou exatamente como eu queria!",
+      "estrelas": 5,
+      "id": "6230"
+    },
+    {
+      "nome": "Bruno T.",
+      "comentario": "Serviço rápido, suporte constante e muita qualidade. Recomendo!",
+      "estrelas": 4,
+      "id": "04eb"
+    },
+    {
+      "nome": "Carla M.",
+      "comentario": "A equipe entende do assunto e entrega com excelência.",
+      "estrelas": 5,
+      "id": "7b96"
+    },
+    {
+      "id": "ab97",
+      "nome": "Igor",
+      "estrelas": 5,
+      "comentario": "Muito bom"
+    }
+  ]
+}
