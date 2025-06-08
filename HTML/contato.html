@@ -9,7 +9,10 @@
 </head>
 <body>
 <header>
-  <div class="logo">CS Studio</div>
+  <div class="topo-mobile">
+    <button class="menu-toggle">☰</button>
+    <div class="logo">CS Studio</div>
+  </div>
   <nav>
     <a href="home.html">Início</a>
     <a href="sobrenos.html">Sobre nós</a>
@@ -43,13 +46,32 @@
       <button type="submit" class="contato-btn">Enviar</button>
       <span id="msgContato" class="contato-msg"></span>
     </form>
-    <aside class="contato-info">
-      <h2>Contato Direto</h2>
-      <p><i class="fas fa-envelope"></i> <b>E-mail:</b> <a href="mailto:contato@seudominio.com">contato@seudominio.com</a></p>
-      <p><i class="fab fa-whatsapp"></i> <b>WhatsApp:</b> <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></p>
-      <p><i class="fas fa-map-marker-alt"></i> <b>Endereço:</b> Rua Exemplo, 123 - São Paulo/SP</p>
-      <p><i class="fas fa-clock"></i> <b>Atendimento:</b> Seg a Sex, 9h às 18h</p>
-    </aside>
+   <aside class="contato-info">
+  <h2>Contato Direto</h2>
+  <div class="contato-item">
+    <i class="fas fa-envelope"></i>
+    <span class="contato-label">E-mail:</span>
+    <span class="contato-txt">contato@seudominio.com</span>
+  </div>
+  <div class="contato-item">
+    <i class="fab fa-whatsapp"></i>
+    <span class="contato-label">WhatsApp:</span>
+    <span class="contato-txt">(11) 99999-9999</span>
+  </div>
+  <div class="contato-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span class="contato-label">Endereço:</span>
+    <span class="contato-txt">Rua Exemplo, 123 - São Paulo/SP</span>
+  </div>
+  <div class="contato-item">
+    <i class="fas fa-clock"></i>
+    <span class="contato-label">Atendimento:</span>
+    <span class="contato-txt">Seg a Sex, 9h às 18h</span>
+  </div>
+</aside>
+
+
+
   </div>
 </main>
 <footer>
@@ -80,5 +102,6 @@ function enviaContato(event) {
   return false;
 }
 </script>
+  <script src="../JS/script.js"></script>
 </body>
 </html>
