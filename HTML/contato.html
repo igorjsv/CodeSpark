@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - CS Studio</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/responsivo.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="topo-mobile">
+    <button class="menu-toggle">☰</button>
+    <div class="logo">CS Studio</div>
+  </div>
+  <nav>
+    <a href="home.html">Início</a>
+    <a href="sobrenos.html">Sobre nós</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+<main class="contato-main">
+  <h1 class="contato-title">Fale Conosco</h1>
+  <p class="contato-desc">
+    Tem alguma dúvida, sugestão ou deseja fazer um orçamento? Preencha o formulário abaixo ou utilize nossos canais de contato.
+  </p>
+  <div class="contato-flex">
+    <form class="contato-form" id="contatoForm" autocomplete="off" onsubmit="return enviaContato(event)">
+      <label for="nome">Nome*</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+      
+      <label for="assunto">Assunto*</label>
+      <input type="text" id="assunto" name="assunto" required>
+      
+      <label for="mensagem">Mensagem*</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      
+      <button type="submit" class="contato-btn">Enviar</button>
+      <span id="msgContato" class="contato-msg"></span>
+    </form>
+   <aside class="contato-info">
+  <h2>Contato Direto</h2>
+  <div class="contato-item">
+    <i class="fas fa-envelope"></i>
+    <span class="contato-label">E-mail:</span>
+    <span class="contato-txt">contato@seudominio.com</span>
+  </div>
+  <div class="contato-item">
+    <i class="fab fa-whatsapp"></i>
+    <span class="contato-label">WhatsApp:</span>
+    <span class="contato-txt">(11) 99999-9999</span>
+  </div>
+  <div class="contato-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <span class="contato-label">Endereço:</span>
+    <span class="contato-txt">Rua Exemplo, 123 - São Paulo/SP</span>
+  </div>
+  <div class="contato-item">
+    <i class="fas fa-clock"></i>
+    <span class="contato-label">Atendimento:</span>
+    <span class="contato-txt">Seg a Sex, 9h às 18h</span>
+  </div>
+</aside>
+
+
+
+  </div>
+</main>
+<footer>
+  <div class="footer-links">
+    <a href="home.html">Home</a>
+    <a href="sobrenos.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <div class="footer-contact">Email: contato@codespark.dev</div>
+  <div class="footer-icons">
+    <a href="#"><i class="fas fa-at"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>© 2025 CodeSpark Studio</p>
+</footer>
+  <script src="../JS/contato.js"></script>
+  <script src="../JS/script.js"></script>
+</body>
+</html>

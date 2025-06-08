@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solicite um Orçamento - CodeSpark Studio</title>
+<link href="../CSS/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../CSS/responsivo.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <div class="topo-mobile">
+    <button class="menu-toggle">☰</button>
+    <div class="logo">CS Studio</div>
+  </div>
+  <nav>
+<a href="home.html">Início</a>
+<a href="sobrenos.html">Sobre nós</a>
+<a href="servicos.html">Serviços</a>
+<a href="portifolio.html">Portfólio</a>
+<a href="contato.html">Contato</a>
+</nav>
+</header>
+<section class="orcamento-intro">
+<h2>Solicite um Orçamento</h2>
+<p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível para oferecer a melhor solução para você.</p>
+</section>
+<section class="orcamento-formulario">
+<div class="form-container">
+<form id="form-orcamento">
+<label>Nome completo *</label>
+<input name="nome" required="" type="text"/>
+<label>E-mail *</label>
+<input name="email" required="" type="email"/>
+<label>Telefone *</label>
+<input maxlength="13" name="telefone" placeholder="(11)912345678" required="" type="tel"/>
+<label>Tipo de serviço desejado</label>
+<select name="servico" required="">
+<option value="">Selecione</option>
+<option>Apps Mobile</option>
+<option>Sites e Sistemas Web</option>
+<option>Integrações e APIs</option>
+<option>UX/UI Design</option>
+<option>Consultoria</option>
+<option>Hospedagem</option>
+</select>
+<label>Descrição do projeto / necessidades</label>
+<textarea name="descricao" required="" rows="5"></textarea>
+<label>Prazo desejado (opcional)</label>
+<input name="prazo" type="text"/>
+<label for="arquivo"><i class="fas fa-paperclip"></i> Anexar arquivos</label>
+<input accept=".pdf,.png" id="arquivo" name="arquivo" type="file"/>
+<button class="btn" type="submit">Enviar orçamento</button>
+</form>
+</div>
+</section>
+<section class="orcamento-depoimento">
+<p><i class="fas fa-users"></i> Mais de 200 clientes satisfeitos</p>
+</section>
+</div>
+<footer>
+<div class="footer-links">
+<a href="home.html">Home</a>
+<a href="sobrenos.html">Sobre</a>
+<a href="servicos.html">Serviços</a>
+<a href="portifolio.html">Portfólio</a>
+<a href="#">Contato</a>
+</div>
+<div class="footer-contact">
+<p>Email: contato@codespark.dev</p>
+</div>
+<div class="footer-icons">
+<a href="#"><i class="fas fa-at"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+</div>
+<p>© 2025 CodeSpark Studio. Todos os direitos reservados.</p>
+</footer>
+</div>
+
+<div id="popup-avaliacao" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000000aa; justify-content:center; align-items:center; z-index:9999;">
+  <div style="background:white; padding:24px; border-radius:12px; width:90%; max-width:400px; text-align:center; box-shadow:0 0 12px rgba(0,0,0,0.2);">
+    <h3 style="margin-bottom:16px; font-size:20px;">Como foi sua experiência?</h3>
+    <div id="avaliacao-content">
+      <input type="text" id="avaliador-nome" placeholder="Seu nome" required 
+        style="width:100%; padding:10px; margin-bottom:12px; border:1px solid #ccc; border-radius:6px;">
+      <input type="number" id="avaliador-estrelas" min="1" max="5" placeholder="Estrelas (1 a 5)" required 
+        style="width:100%; padding:10px; margin-bottom:12px; border:1px solid #ccc; border-radius:6px;">
+      <textarea id="avaliador-comentario" placeholder="Comentário" required rows="4"
+        style="width:100%; padding:10px; margin-bottom:16px; border:1px solid #ccc; border-radius:6px;"></textarea>
+      <button onclick="enviarAvaliacao()" style="padding:10px 20px; background-color:#44CCCC; color:white; border:none; border-radius:8px; cursor:pointer;">
+        Enviar Avaliação
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="../JS/script.js"></script>
+<script src="../JS/avaliacao.js"></script>
+<script src="../JS/orcamento.js"></script>
+</body>
+</html>
