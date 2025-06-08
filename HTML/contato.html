@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - CS Studio</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="logo">CS Studio</div>
+  <nav>
+    <a href="home.html">Início</a>
+    <a href="sobrenos.html">Sobre nós</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+<main class="contato-main">
+  <h1 class="contato-title">Fale Conosco</h1>
+  <p class="contato-desc">
+    Tem alguma dúvida, sugestão ou deseja fazer um orçamento? Preencha o formulário abaixo ou utilize nossos canais de contato.
+  </p>
+  <div class="contato-flex">
+    <form class="contato-form" id="contatoForm" autocomplete="off" onsubmit="return enviaContato(event)">
+      <label for="nome">Nome*</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="email">E-mail*</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+      
+      <label for="assunto">Assunto*</label>
+      <input type="text" id="assunto" name="assunto" required>
+      
+      <label for="mensagem">Mensagem*</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      
+      <button type="submit" class="contato-btn">Enviar</button>
+      <span id="msgContato" class="contato-msg"></span>
+    </form>
+    <aside class="contato-info">
+      <h2>Contato Direto</h2>
+      <p><i class="fas fa-envelope"></i> <b>E-mail:</b> <a href="mailto:contato@seudominio.com">contato@seudominio.com</a></p>
+      <p><i class="fab fa-whatsapp"></i> <b>WhatsApp:</b> <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></p>
+      <p><i class="fas fa-map-marker-alt"></i> <b>Endereço:</b> Rua Exemplo, 123 - São Paulo/SP</p>
+      <p><i class="fas fa-clock"></i> <b>Atendimento:</b> Seg a Sex, 9h às 18h</p>
+    </aside>
+  </div>
+</main>
+<footer>
+  <div class="footer-links">
+    <a href="home.html">Home</a>
+    <a href="sobrenos.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </div>
+  <div class="footer-contact">Email: contato@codespark.dev</div>
+  <div class="footer-icons">
+    <a href="#"><i class="fas fa-at"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <p>© 2025 CodeSpark Studio</p>
+</footer>
+<script>
+function enviaContato(event) {
+  event.preventDefault();
+  let msg = document.getElementById('msgContato');
+  msg.style.color = '#20b320';
+  msg.innerText = 'Mensagem enviada com sucesso! Em breve entraremos em contato.';
+  setTimeout(() => { msg.innerText = ''; }, 5000);
+  document.getElementById('contatoForm').reset();
+  return false;
+}
+</script>
+</body>
+</html>
