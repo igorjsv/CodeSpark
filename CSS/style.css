@@ -935,3 +935,60 @@ main.contato-main {
     margin: 0 auto 16px auto;
   }
 }
+
+
+@media (max-width: 768px) {
+  .contato-formulario {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contato-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contato-form {
+    max-width: 320px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contato-direto {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contato-info {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+}
+
+
+.contato-form label:first-of-type {
+  margin-top: 24px;
+  display: block;
+}
