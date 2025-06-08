@@ -232,7 +232,6 @@ footer a {
   font-weight: bold;
   color: #FF6B54;
 }
-
 .services-intro {
   padding: 60px 40px;
   text-align: center;
@@ -248,7 +247,6 @@ footer a {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
@@ -288,7 +286,6 @@ footer a {
 .service-card ul li {
   margin: 5px 0;
 }
-
 .services-diferenciais {
   background: #f4f4f4;
   text-align: center;
@@ -333,13 +330,11 @@ footer a {
 .cta-final .btn:hover {
   background-color: #33aaaa;
 }
-
 .service-card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
   z-index: 2;
 }
-
 .orcamento-intro {
   text-align: center;
   padding: 60px 20px;
@@ -356,7 +351,6 @@ footer a {
   max-width: 700px;
   margin: 0 auto;
 }
-
 .orcamento-formulario {
   max-width: 600px;
   margin: 40px auto;
@@ -396,7 +390,6 @@ footer a {
 .orcamento-formulario button.btn:hover {
   background: #33aaaa;
 }
-
 .orcamento-depoimento {
   text-align: center;
   padding: 40px;
@@ -404,7 +397,6 @@ footer a {
   font-size: 18px;
   color: #333;
 }
-
 .confirmacao {
   text-align: center;
   padding: 40px;
@@ -414,7 +406,6 @@ footer a {
   margin-top: 20px;
   border-radius: 6px;
 }
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -440,9 +431,6 @@ footer a {
 .modal-content .btn {
   margin-top: 20px;
 }
-
-
-
 /* Portfolio Cards */
 main {
   width: 100vw !important;
@@ -453,7 +441,6 @@ main {
   background: transparent !important;
   box-sizing: border-box !important;
 }
-
 .portfolio-title {
   text-align: center;
   color: #FF6B54;
@@ -470,9 +457,6 @@ main {
   margin: 0 auto 40px auto;
   opacity: 0.9;
 }
-
-
-
 .portfolio-cards {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
@@ -483,7 +467,6 @@ main {
   width: 100% !important;
   box-sizing: border-box !important;
 }
-
 @media (max-width: 1050px) {
   .portfolio-cards {
     grid-template-columns: 1fr 1fr !important;
@@ -498,10 +481,8 @@ main {
   }
   .card {
   min-height: 200px;
-    min-height: 420px !important;
   }
 }
-
 /* Cards */
 .card {
   min-height: 200px;
@@ -516,36 +497,30 @@ main {
   align-items: flex-start;
   transition: transform 0.25s cubic-bezier(.25,.8,.25,1), box-shadow 0.25s;
   cursor: pointer;
-  
   position: relative;
 }
-
 .card-img {
   width: 100%;
   padding: 0;
   background: transparent;
 }
-
 .card-img img {
   width: 100%;
   display: block;
   border-radius: 26px 26px 0 0;
   transition: transform 0.2s;
 }
-
 .card-content {
   padding: 20px 28px 24px 28px;
   width: 100%;
   box-sizing: border-box;
 }
-
 .card-content h3 {
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0 0 10px 0;
   color: #222;
 }
-
 .card-content .desc {
   font-size: 1.05rem;
   color: #444;
@@ -555,21 +530,16 @@ main {
   transition: opacity 0.3s, max-height 0.3s;
   overflow: hidden;
 }
-
 /* Efeito 3D e descrição aparece no hover */
 .card:hover {
   transform: translateY(-12px) scale(1.04) perspective(800px) rotateX(4deg);
   box-shadow: 0 12px 36px rgba(0,0,0,0.16), 0 1.5px 3px rgba(0,0,0,0.05);
   z-index: 2;
 }
-
 .card:hover .desc {
   opacity: 1;
   max-height: 60px;
 }
-
-
-
 /* Responsivo para telas pequenas */
 @media (max-width: 700px) {
   .portfolio-cards {
@@ -578,13 +548,9 @@ main {
   }
   .card {
   min-height: 200px;
-    
   }
 }
-
-
 /* ==== Ajustes para página Contato ==== */
-
 /* Anula width:100vw do main do portfolio e aplica padding */
 main.contato-main {
   width: auto !important;
@@ -593,7 +559,6 @@ main.contato-main {
   background: #ededed;
   box-sizing: border-box;
 }
-
 /* Título e descrição centralizados */
 .contato-title {
   font-size: 2.4rem;
@@ -608,7 +573,6 @@ main.contato-main {
   max-width: 700px;
   margin: 0 auto 40px;
 }
-
 /* Container flexível: form + cartão */
 .contato-flex {
   display: flex;
@@ -617,7 +581,6 @@ main.contato-main {
   align-items: flex-start;
   gap: 40px;
 }
-
 /* Estilo do formulário */
 .contato-form {
   background: #ffffff;
@@ -664,7 +627,6 @@ main.contato-main {
   margin-top: 10px;
   font-size: 0.9rem;
 }
-
 /* Ajuste do cartão de info (aside) */
 .contato-info {
   flex: 1 1 300px;
@@ -679,7 +641,6 @@ main.contato-main {
   display: flex;
   flex-direction: column;
 }
-
 /* Responsivo: empilha no mobile */
 @media (max-width: 768px) {
   .contato-flex {
@@ -692,40 +653,30 @@ main.contato-main {
     width: 100%;
   }
 }
-
 main.contato-main {
   padding-top: 100px !important;
   padding-bottom: 100px !important;
 }
-
 .contato-info {
   color: #888888;
 }
-
 .contato-info h2 {
   color: #44CCCC;
 }
-
 .contato-info i {
   color: #FF6B54;
 }
-
 .contato-info {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .contato-info:hover {
   transform: scale(1.03);
   box-shadow: 0 12px 60px rgba(0, 0, 0, 0.2);
 }
-
-
-
 /* Botão oculto no desktop */
 .menu-toggle {
   display: none;
 }
-
 /* Mobile: Alinhar botão e logo à esquerda */
 @media (max-width: 768px) {
   header {
@@ -733,14 +684,12 @@ main.contato-main {
     align-items: flex-start;
     padding: 10px 20px;
   }
-
   .topo-mobile {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
   }
-
   .menu-toggle {
     display: block;
     font-size: 24px;
@@ -748,7 +697,6 @@ main.contato-main {
     background: none;
     border: none;
   }
-
   nav {
     display: none;
     flex-direction: column;
@@ -756,14 +704,175 @@ main.contato-main {
     width: 100%;
     margin-top: 10px;
   }
-
   nav.active {
     display: flex;
   }
-
   .logo {
     margin: 0;
     padding: 0;
     border: none;
+  }
+}
+@media (max-width: 768px) {
+  .review-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    min-height: 160px;
+    padding: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 320px;
+    width: 90%;
+    min-height: 140px;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .form-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orcamento-formulario {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orcamento-formulario {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .orcamento-formulario input,
+  .orcamento-formulario textarea,
+  .orcamento-formulario select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orcamento-formulario {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .orcamento-formulario input,
+  .orcamento-formulario textarea,
+  .orcamento-formulario select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orcamento-formulario {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .orcamento-formulario input,
+  .orcamento-formulario textarea,
+  .orcamento-formulario select {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orcamento-formulario {
+    margin-bottom: 48px;
+  }
+}
+
+
+.orcamento-formulario form > div:first-child {
+  margin-top: 24px;
+}
+
+
+#form-orcamento label:first-of-type {
+  margin-top: 24px;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-cards .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-cards .card {
+    margin: 0 auto 20px auto;
   }
 }
