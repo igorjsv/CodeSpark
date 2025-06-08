@@ -231,3 +231,110 @@ footer a {
   font-weight: bold;
   color: #FF6B54;
 }
+
+.services-intro {
+  padding: 60px 40px;
+  text-align: center;
+}
+.services-intro h2 {
+  font-size: 36px;
+  color: #FF6B54;
+  margin-bottom: 10px;
+}
+.services-intro p {
+  font-size: 18px;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.service-card i {
+  font-size: 36px;
+  color: #44CCCC;
+  margin-bottom: 15px;
+}
+.service-card h3 {
+  color: #FF6B54;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.service-card p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+}
+.service-card ul li {
+  margin: 5px 0;
+}
+
+.services-diferenciais {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+}
+.services-diferenciais h3 {
+  font-size: 28px;
+  color: #FF6B54;
+  margin-bottom: 30px;
+}
+.diferenciais-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.diferenciais-grid div {
+  text-align: center;
+}
+.diferenciais-grid i {
+  font-size: 28px;
+  color: #44CCCC;
+  margin-bottom: 10px;
+}
+.cta-final {
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta-final h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.cta-final .btn {
+  background-color: #44CCCC;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.cta-final .btn:hover {
+  background-color: #33aaaa;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
