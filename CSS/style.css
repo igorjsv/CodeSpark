@@ -876,3 +876,62 @@ main.contato-main {
     margin: 0 auto 20px auto;
   }
 }
+
+
+@media (max-width: 768px) {
+  .titulo-portifolio {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .titulo-portifolio {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .linha-divisao {
+    width: 140px;
+    margin: 0 auto 16px auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .linha-divisao {
+    width: 80px;
+    margin: 0 auto 16px auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-divider {
+    width: 80px;
+    margin: 0 auto 16px auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-divider {
+    width: 120px;
+    margin: 0 auto 16px auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-divider {
+    width: 160px;
+    margin: 0 auto 16px auto;
+  }
+}
