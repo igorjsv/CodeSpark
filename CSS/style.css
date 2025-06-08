@@ -338,3 +338,105 @@ footer a {
   transition: transform 0.3s ease;
   z-index: 2;
 }
+
+.orcamento-intro {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ededed;
+}
+.orcamento-intro h2 {
+  font-size: 32px;
+  color: #FF6B54;
+  margin-bottom: 10px;
+}
+.orcamento-intro p {
+  font-size: 18px;
+  color: #000;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.orcamento-formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.orcamento-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.orcamento-formulario label {
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+.orcamento-formulario input,
+.orcamento-formulario select,
+.orcamento-formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+.orcamento-formulario button.btn {
+  background: #44CCCC;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+.orcamento-formulario button.btn:hover {
+  background: #33aaaa;
+}
+
+.orcamento-depoimento {
+  text-align: center;
+  padding: 40px;
+  background: #f4f4f4;
+  font-size: 18px;
+  color: #333;
+}
+
+.confirmacao {
+  text-align: center;
+  padding: 40px;
+  background: #d4edda;
+  color: #155724;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-content {
+  background-color: #d4edda;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #155724;
+  font-weight: bold;
+  max-width: 400px;
+  width: 90%;
+}
+.modal-content .btn {
+  margin-top: 20px;
+}
+

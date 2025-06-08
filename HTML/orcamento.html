@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicite um Orçamento - CodeSpark Studio</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">CS Studio</div>
+    <nav>
+      <a href="home.html">Início</a>
+      <a href="sobrenos.html">Sobre nós</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="#">Portfólio</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="orcamento-intro">
+    <h2>Solicite um Orçamento</h2>
+    <p>Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível para oferecer a melhor solução para você.</p>
+  </section>
+
+  <section class="orcamento-formulario">
+    <form id="form-orcamento">
+      <label>Nome completo *</label>
+      <input type="text" name="nome" required>
+
+      <label>E-mail *</label>
+      <input type="email" name="email" required>
+
+      <label>Telefone *</label>
+      <input type="tel" name="telefone" required maxlength="13" placeholder="(11)912345678">
+
+      <label>Tipo de serviço desejado</label>
+      <select name="servico" required>
+        <option value="">Selecione</option>
+        <option>Apps Mobile</option>
+        <option>Sites e Sistemas Web</option>
+        <option>Integrações e APIs</option>
+        <option>UX/UI Design</option>
+        <option>Consultoria</option>
+        <option>Hospedagem</option>
+      </select>
+
+      <label>Descrição do projeto / necessidades</label>
+      <textarea name="descricao" rows="5" required></textarea>
+
+      <label>Prazo desejado (opcional)</label>
+      <input type="text" name="prazo">
+
+      <label for="arquivo"><i class="fas fa-paperclip"></i> Anexar arquivos</label>
+      <input type="file" name="arquivo" id="arquivo" accept=".pdf,.png">
+
+      <button type="submit" class="btn">Enviar orçamento</button>
+    </form>
+  </section>
+
+  <section class="orcamento-depoimento">
+    <p><i class="fas fa-users"></i> Mais de 200 clientes satisfeitos</p>
+  </section>
+
+  <div class="modal-overlay" id="modal-confirmacao">
+  <div class="modal-content">
+    <p id="mensagem-confirmacao"></p>
+    <a href="home.html" class="btn">Voltar ao início</a>
+  </div>
+</div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="home.html">Home</a>
+      <a href="sobrenos.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="#">Portfólio</a>
+      <a href="#">Contato</a>
+    </div>
+    <div class="footer-contact">
+      <p>Email: contato@codespark.dev</p>
+    </div>
+    <div class="footer-icons">
+      <a href="#"><i class="fas fa-at"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 CodeSpark Studio. Todos os direitos reservados.</p>
+  </footer>
+  <script>
+  document.getElementById('form-orcamento').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const email = this.email.value;
+    const mensagem = document.getElementById('mensagem-confirmacao');
+    const modal = document.getElementById('modal-confirmacao');
+
+    mensagem.innerText = `Obrigado! Em breve entraremos em contato com você pelo e-mail: ${email}`;
+    modal.style.display = 'flex'; // exibe o modal
+  });
+</script>
+
+</body>
+</html>
