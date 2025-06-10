@@ -54,7 +54,7 @@ Nossos serviços incluem:
 
 ## 💻 Tecnologias Utilizadas
 
-Este projeto foi construído utilizando tecnologias web modernas e focadas em performance e manutenibilidade.
+Este projeto foi construído utilizando tecnologias web modernas e focadas em performance e facilitar a manutenção.
 
 | Tecnologia | Descrição |
 | :--- | :--- |
@@ -144,7 +144,8 @@ Para visualizar e interagir com o projeto localmente, siga os passos abaixo. Voc
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/codespark-website.git](https://github.com/seu-usuario/codespark-website.git)
+    git clone [https://github.com/seu-usuario/CodeSpark.git](https://github.com/seu-usuario/CodeSpark.git)
+    
     ```
 
 2.  **Navegue até o diretório do projeto:**
